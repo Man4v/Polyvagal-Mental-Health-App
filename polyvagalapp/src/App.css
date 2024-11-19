@@ -1,0 +1,252 @@
+*{margin:0; padding:0; font-family: Georgia, 'Times New Roman', Times, serif;}
+
+body{
+  background-image: linear-gradient(to right, rgb(91, 91, 177), rgb(227, 182, 218));
+}
+.navbar{
+  background-image: linear-gradient(to right, rgb(78, 78, 153), rgb(113, 55, 102));
+  display:flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo{
+  padding: 15px 15px;
+  width: fit-content;
+  font-size: 25px;
+  border-right: solid 1px black;
+  color: rgb(240, 185, 185);
+}
+
+.navbar-items{
+  display: flex;
+  padding: 15px 40px;
+  list-style-type: none;
+  gap: 40px;
+  font-size: 24px;
+}
+
+.navbar-items li a{
+  text-decoration: none;
+  color: rgb(240, 185, 185);
+}
+
+
+/* Calibration Page Container */
+.calibration-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.calibration-page h1 {
+  font-size: 2.5em;
+  color: #16406f;
+}
+
+.calibration-page p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #413333;
+}
+
+/* Audio Buttons */
+.audio-buttons button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+  background-color: #104480;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.audio-buttons button:hover {
+  background-color: #357ABD;
+}
+
+/* Audio Section */
+.audio-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audio-section h2 {
+  font-size: 1.8em;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+form label {
+  font-size: 1em;
+  text-align: left;
+  color: #555;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button[type="submit"] {
+  font-size: 1.1em;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #357ABD;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .calibration-page {
+    padding: 10px;
+  }
+  
+  .audio-section {
+    padding: 15px;
+  }
+  
+  form label {
+    font-size: 0.9em;
+  }
+  
+  form input[type="text"],
+  form button[type="submit"] {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.formlogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  width:fit-content;
+  padding: 20px;
+  background-image: linear-gradient(to left, rgb(121, 117, 221), rgb(216, 165, 190));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.label {
+  font-weight: bold;
+  color: #333;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.changebutt{
+  margin-left: 10px;
+}
+
+.chatbot-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.chat-window {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+  margin-bottom: 15px;
+}
+
+.message {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  max-width: 75%;
+}
+
+.user-message {
+  background-color: #d1e7dd;
+  text-align: left;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.ai-message {
+  background-color: #f8d7da;
+  text-align: left;
+}
+
+.message-input-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message-input-form input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.message-input-form button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
